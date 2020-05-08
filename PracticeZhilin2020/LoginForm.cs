@@ -43,7 +43,9 @@ namespace PracticeZhilin2020
         
             if(datatable.Rows.Count > 0)
             {
-                MessageBox.Show("Yes");
+                this.Hide();
+                HeadForm headForm = new HeadForm(user_login);
+                headForm.Show();
             }
             else
             {
